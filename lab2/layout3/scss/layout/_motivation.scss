@@ -1,0 +1,51 @@
+.motivation {
+  border-bottom: 1px solid $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/img/go_travel.jpg');
+    background-size: contain;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+  }
+
+  .btn__register {
+    margin-top: 30px;
+    width: 400px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &__item {
+    padding: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  }
+}

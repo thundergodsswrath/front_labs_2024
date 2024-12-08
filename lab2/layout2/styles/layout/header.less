@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  .logo {
+    .flex-center();
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .search {
+    position: relative;
+
+    input {
+      padding: 0 30px 0 10px;
+      width: 700px;
+      height: 30px;
+      border: 1px solid @border-color;
+
+      &:focus {
+        outline: none;
+        border-color: @primary-color;
+      }
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: @primary-color;
+      cursor: pointer;
+    }
+  }
+}

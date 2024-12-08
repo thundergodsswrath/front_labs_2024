@@ -1,0 +1,127 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px;
+  background-color: #fff;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      fill: #000;
+      width: 30px;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+
+  &__search {
+    width: 210px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: -10px;
+
+    &-input {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      svg {
+        position: absolute;
+        width: 16px;
+        top: 50%;
+        right: 0px;
+        transform: translate(-50%, -50%);
+        fill: #000;
+      }
+
+      .input {
+        border-radius: 5px;
+        border: 1px solid #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 25px;
+        outline: none;
+      }
+    }
+  }
+
+  &__burger-btn {
+    svg {
+      display: none;
+      fill: #000;
+      width: 30px;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        fill: #000;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    &-list {
+      display: flex;
+      gap: 100px;
+      align-items: center;
+
+      &-link {
+        color: #000;
+        font-weight: bold;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+          color: #000;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    &__burger-btn {
+      svg {
+        display: block;
+      }
+    }
+
+    &__search {
+      margin-right: 0px;
+    }
+
+    &__nav-list {
+      gap: 50px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__nav-list {
+      gap: 20px;
+    }
+  }
+}

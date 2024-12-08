@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts {
+  padding-block: 20px;
+  width: 80%;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

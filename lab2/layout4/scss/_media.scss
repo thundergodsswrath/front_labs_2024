@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .posts {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-top: #ccc 1px solid;
+    border-left: none;
+  }
+
+  .post__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .post__image--more {
+    width: 100%;
+    height: 200px;
+  }
+
+  .post__content {
+    width: 100%;
+  }
+}

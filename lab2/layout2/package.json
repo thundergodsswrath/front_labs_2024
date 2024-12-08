@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "less": "^4.2.0",
+    "nodemon": "^3.1.7"
+  },
+  "scripts": {
+    "less": "nodemon --watch styles -e less --exec \"npx lessc styles/main.less styles/main.css\""
+  }
+}
